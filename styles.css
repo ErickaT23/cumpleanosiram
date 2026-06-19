@@ -1,17 +1,17 @@
 :root {
     --bg: #000000;
     --ink: #0D0D0D;
-    --rose: #C8D8E8;
-    --light: #D4E4F0;
-    --rose-dark: #1A3A5C;
-    --rose-deep: #0D2840;
-    --gold-1: #D4E4F0;
-    --gold-2: #8BAFC8;
-    --gold-3: #4A7A9B;
+    --rose: #C9A84C;
+    --light: #E8D5A3;
+    --rose-dark: #C9A84C;
+    --rose-deep: #0a0a0a;
+    --gold-1: #E8D5A3;
+    --gold-2: #E8D5A3;
+    --gold-3: #C9A84C;
     --line: rgba(13, 40, 64, 0.18);
     --card: rgba(255, 255, 255, 0.75);
     --white: #ffffff;
-    --title-rose-gradient: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%);
+    --title-rose-gradient: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%);
     --cursive: "Cormorant Garant", serif;
     --title: "Montserrat", sans-serif;
     --text: "Cormorant Garant", serif;
@@ -120,7 +120,7 @@ a {
 }
 
 .gold-gradient {
-    background: linear-gradient(120deg, #D4E4F0 0%, #8BAFC8 35%, #1A3A5C 60%, #8BAFC8 100%);
+    background: linear-gradient(120deg, #E8D5A3 0%, #E8D5A3 35%, #C9A84C 60%, #E8D5A3 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -128,7 +128,7 @@ a {
 }
 
 .rose-gradient {
-    background: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%);
+    background: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -158,7 +158,7 @@ a {
 .portada-fondo {
     position: absolute;
     inset: 0;
-    background: url("images/FN.png") center/cover no-repeat;
+    background: url("images/FP.png") center/cover no-repeat;
 }
 
 .portada-fondo::after {
@@ -206,7 +206,7 @@ a {
     font-family: var(--cursive);
     font-weight: 500;
     font-size: clamp(3.2rem, 14vw, 5.4rem);
-    background: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%);
+    background: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -267,7 +267,7 @@ a {
 .media-share-inicial,
 .wishes-title-inicial,
 .rsvp-title-inicial {
-    background: linear-gradient(120deg, #D4E4F0 0%, #8BAFC8 35%, #1A3A5C 60%, #8BAFC8 100%);
+    background: linear-gradient(120deg, #E8D5A3 0%, #E8D5A3 35%, #C9A84C 60%, #E8D5A3 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -418,7 +418,7 @@ a {
     right: 0;
     bottom: -1px;
     height: clamp(120px, 20vh, 220px);
-    background: linear-gradient(to bottom, rgba(247, 244, 239, 0), rgba(247, 244, 239, 0.45) 65%, rgba(247, 244, 239, 0.75));
+    background: none;
     pointer-events: none;
     z-index: 2;
 }
@@ -426,7 +426,7 @@ a {
 .hero-invitado-fondo {
     position: absolute;
     inset: 0;
-    background: url("images/F5.jpeg") center/cover no-repeat;
+    background: url("images/H3.jpeg") 62% center/cover no-repeat;
     transform: scale(1.012);
     transform-origin: center;
 }
@@ -484,7 +484,7 @@ a {
 .rsvp-title,
 .album-title,
 .frase-texto {
-    background: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%);
+    background: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -544,10 +544,11 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
     line-height: 1.3;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
+    text-align: center;
     font-family: var(--cursive);
-    background: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%);
+    background: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -566,7 +567,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
     font-size: 50px;
     font-family: var(--text);
     font-style: italic;
-    background: linear-gradient(120deg, #D4E4F0 0%, #8BAFC8 35%, #1A3A5C 60%, #8BAFC8 100%);
+    background: linear-gradient(120deg, #E8D5A3 0%, #E8D5A3 35%, #C9A84C 60%, #E8D5A3 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -644,7 +645,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
     align-items: center;
     justify-content: center;
     font-family: var(--cursive);
-    background: linear-gradient(120deg, #D4E4F0 0%, #8BAFC8 35%, #1A3A5C 60%, #8BAFC8 100%);
+    background: linear-gradient(120deg, #E8D5A3 0%, #E8D5A3 35%, #C9A84C 60%, #E8D5A3 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -711,8 +712,8 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 }
 
 .countdown-section .countdown-fondo {
-    background-image: url("images/F3.jpeg");
-    background-position: center;
+    background-image: url("images/H5.jpeg");
+    background-position: 82% center;
 }
 
 .countdown-section .countdown-overlay {
@@ -757,7 +758,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 .countdown-section .countdown-number {
     min-width: 78px;
     padding: 16px 12px;
-    color: #0D2840;
+    color: #0a0a0a;
     background: linear-gradient(to bottom, rgba(212, 228, 240, 0.88), rgba(200, 216, 232, 0.78));
     border: 1px solid rgba(139, 175, 200, 0.45);
     box-shadow: 0 14px 28px rgba(22, 10, 15, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.45);
@@ -777,7 +778,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 }
 
 .countdown-section .btn-calendar {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 8px 14px;
     font-size: .56rem;
     letter-spacing: .11em;
@@ -934,7 +935,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 
 .bendiciones-texto {
     margin: 0;
-    color: #1A3A5C;
+    color: #C9A84C;
     font-family: var(--text);
     font-size: clamp(1.08rem, 2.5vw, 1.34rem);
     line-height: 1.75;
@@ -946,7 +947,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
     font-family: var(--cursive);
     font-size: clamp(2rem, 7vw, 3.05rem);
     line-height: 1.08;
-    background: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%);
+    background: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -981,7 +982,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 
 .invitado-mensaje,
 .invitado-lugares {
-    color: #1A3A5C;
+    color: #C9A84C;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.55);
 }
 
@@ -1316,7 +1317,7 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
 }
 
 .gift-option-title {
-    background: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%);
+    background: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -2065,7 +2066,7 @@ html.js-anim .section-separador.visible .separador-foto-img {
 .gift-modal-title,
 .gift-option-title-envelope .gift-inicial,
 .gift-option-title-envelope .gift-resto {
-    background: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%);
+    background: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -2964,7 +2965,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 .invitado-tarjeta {
     background: url("images/FB.png") center/cover no-repeat;
     border: 6px solid transparent;
-    border-image: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%) 1;
+    border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
 }
 
@@ -2979,7 +2980,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 .bendiciones-tarjeta {
     background: url("images/FB.png") center/cover no-repeat;
     border: 6px solid transparent;
-    border-image: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%) 1;
+    border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
 }
 
@@ -3005,7 +3006,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 #agenda .agenda-panel {
     background: url("images/FN.png") center/cover no-repeat;
        border: 6px solid transparent;
-    border-image: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%) 1;
+    border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
 }
 
@@ -3098,7 +3099,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 #events .event-card {
     background: url("images/FN.png") center/cover no-repeat;
     border: 6px solid transparent;
-    border-image: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%) 1;
+    border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
 }
 
@@ -3126,7 +3127,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 #wishes-section .wishes-inner {
     background: url("images/FN.png") center/cover no-repeat !important;
     border: 6px solid transparent;
-    border-image: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%) 1;
+    border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
 }
 
@@ -3151,7 +3152,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
     overflow: hidden;
     background: url("images/FB.png") center/cover no-repeat;
     border: 6px solid transparent;
-    border-image: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%) 1;
+    border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
     padding: 20px;
 }
@@ -3225,7 +3226,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
     align-items: center;
     justify-content: center;
     border: 6px solid transparent;
-    border-image: linear-gradient(120deg, #C8D8E8 0%, #8BAFC8 25%, #1A3A5C 50%, #8BAFC8 75%, #C8D8E8 100%) 1;
+    border-image: linear-gradient(120deg, #C9A84C 0%, #E8D5A3 25%, #C9A84C 50%, #E8D5A3 75%, #C9A84C 100%) 1;
     background: url("images/FB.png") center/cover no-repeat;
     box-shadow: 0 0 20px rgba(139, 175, 200, 0.45), 0 14px 32px rgba(20, 35, 52, 0.36);
     padding: 2.1em 1.6em;
@@ -3263,4 +3264,664 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
 .lang-fab-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(31, 17, 21, 0.16);
+}
+
+/* Great Gatsby visual refresh */
+:root {
+    --bg: #0a0a0a;
+    --ink: #F5EDD6;
+    --rose: #C9A84C;
+    --light: #F5EDD6;
+    --rose-dark: #C9A84C;
+    --rose-deep: #0a0a0a;
+    --gold-1: #E8D5A3;
+    --gold-2: #C9A84C;
+    --gold-3: #8f722c;
+    --line: rgba(201, 168, 76, 0.36);
+    --card: rgba(10, 10, 10, 0.78);
+    --white: #F5EDD6;
+    --title-rose-gradient: linear-gradient(120deg, #E8D5A3 0%, #C9A84C 38%, #F5EDD6 50%, #C9A84C 62%, #E8D5A3 100%);
+    --cursive: "Great Vibes", cursive;
+    --title: "Cormorant Garamond", serif;
+    --text: "Outfit", sans-serif;
+    --sans: "Outfit", sans-serif;
+    --art-deco-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-width='1' opacity='0.05'%3E%3Cpath d='M48 4 92 48 48 92 4 48Z'/%3E%3Cpath d='M48 18 78 48 48 78 18 48Z'/%3E%3Cpath d='M0 48h96M48 0v96M16 0l80 80M80 0 0 80'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+body {
+    background-color: #0a0a0a;
+    background-image: var(--art-deco-pattern), linear-gradient(180deg, #0a0a0a 0%, #11100d 100%);
+    color: #F5EDD6;
+    font-family: var(--text);
+    font-weight: 300;
+}
+
+.section:not(.section-separador)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: var(--art-deco-pattern);
+    background-size: 96px 96px;
+    z-index: 1;
+}
+
+.section-inner,
+.events-container,
+.agenda-panel,
+.invitado-tarjeta,
+.bendiciones-tarjeta,
+.playlist-media-wrap,
+.footer > * {
+    position: relative;
+    z-index: 2;
+}
+
+.portada-fondo::after,
+.hero-invitado-overlay,
+.events-overlay,
+.countdown-overlay,
+.invitado-section .events-overlay,
+.bendiciones-section .events-overlay,
+.wishes-section .events-overlay {
+    display: block !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.portada-subtitulo,
+.scroll-hint-text,
+.countdown-label,
+.event-time,
+.event-lugar,
+.event-direccion,
+.itinerary-name,
+.itinerary-time,
+.dresscode-text,
+.gifts-text,
+.trayectoria-text,
+.playlist-text,
+.album-text,
+.wishes-text,
+.rsvp-intro,
+.wish-field label,
+.rsvp-label,
+.rsvp-radio-option,
+.form-group label,
+.invitado-lugares,
+.album-qr-label {
+    color: #F5EDD6 !important;
+    -webkit-text-fill-color: #F5EDD6 !important;
+    font-family: var(--text) !important;
+    font-weight: 300;
+}
+
+.portada-subtitulo,
+.countdown-titulo,
+.itinerary-title,
+.event-titulo,
+.dresscode-title,
+.gifts-title,
+.trayectoria-title,
+.playlist-title,
+.album-title,
+.wishes-title,
+.rsvp-title,
+.bendiciones-nombre {
+    font-family: var(--title) !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    background: none !important;
+    color: #C9A84C !important;
+    -webkit-text-fill-color: #C9A84C !important;
+    text-shadow: 0 0 20px rgba(201, 168, 76, 0.28);
+    animation: none !important;
+}
+
+.event-inicial,
+.event-resto,
+.itinerary-inicial,
+.itinerary-resto,
+.gifts-title-inicial,
+.gifts-title-resto,
+.playlist-title-inicial,
+.playlist-title-resto,
+.wishes-title-inicial,
+.wishes-title-resto,
+.rsvp-title-inicial,
+.rsvp-title-resto,
+.album-title-inicial,
+.album-title-resto {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+}
+
+.portada-nombre-principal,
+.name-lines,
+.invitado-nombre,
+.frase-texto {
+    font-family: var(--cursive) !important;
+    font-weight: 400 !important;
+    letter-spacing: 0;
+    text-transform: none;
+    background: var(--title-rose-gradient) !important;
+    background-size: 220% auto !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    text-shadow: 0 0 22px rgba(232, 213, 163, 0.18);
+}
+
+.portada-nombre-principal {
+    padding: 10px !important;
+}
+
+.date-vertical,
+.invitado-mensaje,
+.bendiciones-texto,
+.itinerary-icon,
+.itinerary-icon i,
+.countdown-separator {
+    color: #C9A84C !important;
+    -webkit-text-fill-color: #C9A84C !important;
+    background: none !important;
+    font-family: var(--title) !important;
+}
+
+.portada-boton,
+.btn-calendar,
+.btn-location,
+.btn-gift,
+.btn-playlist,
+.btn-album,
+.btn-dresscode,
+.btn-media-share,
+.btn-rsvp,
+.btn-wish-toggle,
+.btn-wish-submit,
+.lang-fab-btn,
+.music-fab-btn {
+    border: 1px solid #C9A84C !important;
+    background: #C9A84C !important;
+    color: #0a0a0a !important;
+    font-family: var(--sans) !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.14em;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.34), inset 0 0 0 1px rgba(245, 237, 214, 0.38) !important;
+}
+
+.portada-boton:hover,
+.btn-calendar:hover,
+.btn-location:hover,
+.btn-playlist:hover,
+.btn-album:hover,
+.btn-rsvp:hover,
+.btn-wish-toggle:hover,
+.btn-wish-submit:hover,
+.lang-fab-btn:hover,
+.music-fab-btn:hover {
+    color: #0a0a0a !important;
+    background: #E8D5A3 !important;
+    border-color: #E8D5A3 !important;
+}
+
+.portada-sobre-btn:focus-visible,
+.portada-boton:focus-visible,
+.btn-calendar:focus-visible,
+.btn-location:focus-visible,
+.btn-playlist:focus-visible,
+.btn-album:focus-visible,
+.btn-rsvp:focus-visible,
+.btn-wish-toggle:focus-visible,
+.btn-wish-submit:focus-visible {
+    outline: 2px solid rgba(232, 213, 163, 0.8) !important;
+}
+
+#invitado,
+#bendiciones,
+#events,
+#dresscode,
+#trayectoria-laboral,
+#album,
+#playlist,
+#wishes-section,
+#rsvp-section,
+#frase-final,
+#footer,
+.agenda-section {
+    background-color: #0a0a0a !important;
+    background-image: var(--art-deco-pattern), linear-gradient(145deg, #0a0a0a 0%, #15130d 100%) !important;
+    background-size: 96px 96px, cover !important;
+}
+
+#invitado .invitado-fondo,
+#bendiciones .bendiciones-fondo,
+#events .events-fondo,
+#dresscode .dresscode-fondo,
+#trayectoria-laboral .trayectoria-fondo,
+#album .events-fondo,
+#playlist .events-fondo,
+#wishes-section .wishes-fondo,
+#rsvp-section .rsvp-fondo,
+#frase-final .final-cierre-fondo {
+    display: block !important;
+    background-image: var(--art-deco-pattern), linear-gradient(145deg, #0a0a0a 0%, #15130d 100%) !important;
+    background-size: 96px 96px, cover !important;
+}
+
+#invitado .invitado-fondo {
+    background-image: url("images/FNEGRO.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.agenda-section {
+    background-image: url("images/FNEGRO.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#agenda::before {
+    display: none !important;
+}
+
+#events .events-fondo {
+    background-image: url("images/FP.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#separador-itinerario .separador-foto-img {
+    object-position: 80% center !important;
+}
+
+#agenda .itinerary-title,
+#events .event-titulo {
+    font-size: clamp(1.45rem, 4.8vw, 2.1rem) !important;
+    letter-spacing: 0.12em;
+}
+
+#dresscode {
+    background-image: url("images/FNEGRO.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#dresscode .dresscode-fondo {
+    background-image: url("images/FNEGRO.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#dresscode .dresscode-title,
+#dresscode .gifts-title {
+    font-size: clamp(1.45rem, 4.8vw, 2.1rem) !important;
+    letter-spacing: 0.12em;
+}
+
+#dresscode .dresscode-inner {
+    background: rgba(5, 5, 5, 0.9) !important;
+    border: 1px solid #C9A84C !important;
+    box-shadow: 0 0 0 7px rgba(201, 168, 76, 0.08), inset 0 0 0 1px rgba(232, 213, 163, 0.34), 0 24px 62px rgba(0, 0, 0, 0.58) !important;
+}
+
+#dresscode .dresscode-inner::before {
+    inset: 12px !important;
+    border: 1px solid rgba(232, 213, 163, 0.68) !important;
+}
+
+#dresscode .dresscode-inner::after {
+    content: "" !important;
+    position: absolute;
+    inset: 8px;
+    pointer-events: none;
+    background:
+        linear-gradient(135deg, #C9A84C 0 1px, transparent 1px) top left / 34px 34px no-repeat,
+        linear-gradient(225deg, #C9A84C 0 1px, transparent 1px) top right / 34px 34px no-repeat,
+        linear-gradient(45deg, #C9A84C 0 1px, transparent 1px) bottom left / 34px 34px no-repeat,
+        linear-gradient(315deg, #C9A84C 0 1px, transparent 1px) bottom right / 34px 34px no-repeat;
+    z-index: 1;
+}
+
+#dresscode .dresscode-gifts-divider {
+    width: min(300px, 72%);
+    height: 1px;
+    margin: clamp(26px, 5vw, 38px) auto;
+    border: 0;
+    background: linear-gradient(90deg, transparent, #C9A84C 18%, #E8D5A3 50%, #C9A84C 82%, transparent);
+    box-shadow: 0 0 12px rgba(201, 168, 76, 0.42);
+    opacity: 0.95;
+}
+
+#dresscode .dresscode-gifts-divider::before,
+#dresscode .dresscode-gifts-divider::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #C9A84C;
+    background: #080808;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#dresscode .dresscode-gifts-divider::before {
+    top: 50%;
+}
+
+#dresscode .dresscode-gifts-divider::after {
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    background: #E8D5A3;
+}
+
+#separador-regalos .separador-foto-img {
+    object-position: 30% center !important;
+}
+
+#separador-wishes .separador-foto-img {
+    object-position: 30% center !important;
+}
+
+#separador-rotativo .separador-foto-img {
+    object-position: 50% center;
+}
+
+#dresscode .dresscode-icon {
+    padding: 10px;
+    background: rgba(5, 5, 5, 0.48);
+    box-sizing: border-box;
+}
+
+#album,
+#album .events-fondo {
+    background-image: url("images/FNEGRO.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#playlist,
+#playlist .events-fondo {
+    background-image: url("images/FP.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#album .album-title,
+#playlist .playlist-title {
+    font-size: clamp(1.45rem, 4.8vw, 2.1rem) !important;
+    letter-spacing: 0.12em;
+}
+
+#dresscode .events-overlay,
+#album .events-overlay,
+#playlist .events-overlay,
+#events .events-overlay {
+    background: rgb(0 0 0 / 36%) !important;
+}
+
+#wishes-section,
+#wishes-section .wishes-fondo {
+    background-image: url("images/FNEGRO.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#rsvp-section,
+#rsvp-section .rsvp-fondo {
+    background-image: url("images/FP.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#wishes-section .events-overlay,
+#rsvp-section .events-overlay {
+    background: rgb(0 0 0 / 36%) !important;
+}
+
+.album-qr-img {
+    width: 350px !important;
+    height: 350px !important;
+    object-fit: cover;
+    padding: 8px;
+    background: transparent !important;
+    border: 0 !important;
+}
+
+#agenda .itinerary-icon i {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    color: #C9A84C !important;
+    -webkit-text-fill-color: #C9A84C !important;
+    background: none !important;
+}
+
+.names-editorial {
+    overflow: hidden;
+    background-color: #0a0a0a !important;
+    background-image: linear-gradient(rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url("images/FP.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-top: 1px solid rgba(201, 168, 76, 0.28);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.28);
+}
+
+#names::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: -1px !important;
+    background: rgb(0 0 0 / 55%) !important;
+    z-index: 1 !important;
+}
+
+#names .names-grid,
+#names .names-text {
+    position: relative;
+    z-index: 2;
+}
+
+#countdown::before {
+    display: none !important;
+}
+
+.date-vertical {
+    border-left: 1px solid #C9A84C;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.08em;
+}
+
+.invitado-tarjeta,
+.bendiciones-tarjeta,
+#events .event-card,
+#agenda .agenda-panel,
+#dresscode .dresscode-inner,
+#playlist .playlist-media-wrap,
+#album .album-inner,
+#wishes-section .wishes-inner,
+#rsvp-section .rsvp-panel,
+#frase-final .frase-card {
+    background: rgba(10, 10, 10, 0.78) !important;
+    border: 1px solid rgba(201, 168, 76, 0.76) !important;
+    border-image: none !important;
+    box-shadow: 0 0 0 8px rgba(201, 168, 76, 0.06), 0 24px 60px rgba(0, 0, 0, 0.5) !important;
+}
+
+.invitado-tarjeta::before,
+.bendiciones-tarjeta::before,
+#events .event-card::before,
+#agenda .agenda-panel::before,
+#dresscode .dresscode-inner::before,
+#playlist .playlist-media-wrap::before,
+#album .album-inner::before,
+#wishes-section .wishes-inner::before,
+#rsvp-section .rsvp-panel::before,
+#frase-final .frase-card::before {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    pointer-events: none;
+    border: 1px solid rgba(232, 213, 163, 0.42) !important;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(18px, 4vw, 28px);
+    width: min(980px, 100%);
+}
+
+.events-script-shield {
+    display: none !important;
+}
+
+#events .event-card {
+    width: 100%;
+    margin: 0;
+}
+
+.event-photo-icon,
+.dresscode-icon,
+.trayectoria-item img,
+.album-qr-img {
+    border: 1px solid rgba(201, 168, 76, 0.72);
+}
+
+.event-photo-icon,
+.dresscode-icon {
+    filter: sepia(0.28) saturate(0.86) contrast(1.05);
+}
+
+.countdown-section .countdown-number {
+    color: #F5EDD6 !important;
+    background: rgba(10, 10, 10, 0.74) !important;
+    border: 1px solid rgba(201, 168, 76, 0.76) !important;
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.45), inset 0 0 18px rgba(201, 168, 76, 0.1) !important;
+    text-shadow: 0 0 12px rgba(232, 213, 163, 0.18) !important;
+}
+
+.countdown-section .countdown-titulo {
+    font-size: clamp(2rem, 6vw, 3.6rem);
+    line-height: 1.05;
+}
+
+.album-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.album-inner {
+    padding: clamp(38px, 6vw, 64px) clamp(22px, 5vw, 52px);
+    text-align: center;
+}
+
+.album-title {
+    margin: 0 0 18px;
+    font-size: clamp(2.2rem, 7vw, 4rem);
+    line-height: 1;
+}
+
+.album-title-space {
+    display: inline-block;
+    width: 0.22em;
+}
+
+.album-text {
+    max-width: 520px;
+    margin: 0 auto 22px;
+    font-size: var(--body-size);
+    line-height: 1.6;
+}
+
+.btn-album {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 148px;
+    min-height: 34px;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: .56rem;
+    line-height: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform .25s cubic-bezier(0.22, 1, 0.36, 1), background .25s ease, color .25s ease;
+}
+
+.album-qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.album-qr-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    padding: 8px;
+    background: #F5EDD6;
+}
+
+.album-qr-label {
+    margin: 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.wish-field input,
+.wish-field textarea,
+#rsvp-name,
+#guest-count {
+    background: rgba(10, 10, 10, 0.72) !important;
+    border-color: rgba(201, 168, 76, 0.54) !important;
+    color: #F5EDD6 !important;
+    font-family: var(--sans) !important;
+}
+
+.rsvp-radio-option {
+    border-color: rgba(201, 168, 76, 0.46) !important;
+    background: rgba(10, 10, 10, 0.5) !important;
+}
+
+.footer,
+.footer a {
+    color: #C9A84C !important;
+}
+
+.music-fab-btn,
+.lang-fab-btn {
+    background: rgba(10, 10, 10, 0.82) !important;
+    color: #C9A84C !important;
+}
+
+@media (max-width: 720px) {
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portada-nombre-principal,
+    .name-lines {
+        font-size: clamp(3.1rem, 17vw, 5rem);
+    }
+
+    .date-vertical {
+        font-size: clamp(2.1rem, 12vw, 3rem);
+    }
 }

@@ -35,7 +35,7 @@ const externalConfig = window.config || {};
 function resolveEventId() {
     const eventConfig = externalConfig.event || {};
     const eventIdParam = String(eventConfig.eventIdParam || 'eventId').trim() || 'eventId';
-    const defaultEventId = String(eventConfig.defaultEventId || 'promocion-anthonyjr-2026').trim() || 'promocion-anthonyjr-2026';
+    const defaultEventId = String(eventConfig.defaultEventId || 'irmanstalin2026').trim() || 'irmanstalin2026';
     const params = new URLSearchParams(window.location.search || '');
     const paramValue = String(params.get(eventIdParam) || '').trim();
     const eventId = paramValue || defaultEventId;
@@ -87,22 +87,22 @@ function createSiteConfig(remoteConfig) {
 
     return {
         seo: {
-            titulo: 'Anthony Jr. Lopez',
-            descripcion: 'Celebremos los éxitos y la vida de Anthony Jr. Lopez - 27 de junio de 2026',
+            titulo: 'Irman Estalin Lopez',
+            descripcion: 'Celebremos juntos la vida',
             autor: 'Two Design',
             ...externalConfig.seo,
             ...normalizedRemoteConfig.seo
         },
         pareja: {
-            nombres: 'Anthony Jr. Lopez',
-            fecha: '27-06-2026',
-            fechaVisible: '27.06.2026',
+            nombres: 'Irman Estalin Lopez',
+            fecha: '01-08-2026',
+            fechaVisible: '01.08.2026',
             ...externalConfig.pareja,
             ...normalizedRemoteConfig.pareja
         },
         musica: {
             titulo: 'Nuestra Canción',
-            archivo: 'audio/goldenhour.mp3',
+            archivo: 'audio/cancion.mp3',
             ...externalConfig.musica,
             ...normalizedRemoteConfig.musica
         },
@@ -117,23 +117,23 @@ function createSiteConfig(remoteConfig) {
                 ...(remoteEvento.ceremonia || {})
             },
             recepcion: {
-                titulo: 'Recepción',
-                lugar: 'Vista Penthouse Ballroom & Catering',
-                hora: '7:00 PM',
-                direccion: '27-05 39th Ave, Long Island City, NY 11101, United States',
-                ubicacionUrl: 'https://maps.apple/p/_pXDYRpviixPmz',
+                titulo: 'Celebración',
+                lugar: 'Terrace On The Park',
+                hora: '7:30 PM',
+                direccion: '52-11 111th St, Queens, NY 11368, United States',
+                ubicacionUrl: 'https://maps.apple/p/Y9vPoC194GsG.D',
                 ...(localEvento.recepcion || {}),
                 ...(remoteEvento.recepcion || {})
             }
         },
         textos: {
-            mensajeInvitado: 'Tu presencia hace este logro aún más especial',
+            mensajeInvitado: 'Tu presencia hace este momento aún más memorable',
             mensajePases: 'Hemos reservado para ti {pases}',
             ...externalConfig.textos,
             ...normalizedRemoteConfig.textos
         },
         footer: {
-            hashtag: '#AnthonyJrLopez',
+            hashtag: '#IrmanEstalinLopez',
             instagramUrl: 'https://instagram.com/thetwodesign',
             facebookUrl: 'https://facebook.com/thetwodesign',
             marcaTexto: 'Diseño',
@@ -283,73 +283,9 @@ function applyFooterConfig() {
 // ============================================
 const GuestConfig = {
     invitados: {
-        "1": { nombre: "Miguel Núñez y Familia", pases: 3 },
-        "2": { nombre: "Hendry Solís y Familia", pases: 3 },
-        "3": { nombre: "Guido Núñez y Silvia Lescano", pases: 2 },
-        "4": { nombre: "Karina Montoya", pases: 1 },
-        "5": { nombre: "Julio Carrillo y Esposa", pases: 2 },
-        "6": { nombre: "Alex Salazar y Esposa", pases: 2 },
-        "7": { nombre: "René Andino y Esposa", pases: 2 },
-        "8": { nombre: "Franklin Fiallos y Esposa", pases: 2 },
-        "9": { nombre: "Lourdes Fiallos", pases: 2 },
-        "10": { nombre: "Fernanda Lescano", pases: 2 },
-        "11": { nombre: "Luis Balladares y Esposa", pases: 2 },
-        "12": { nombre: "Danilo Jordan y Esposa", pases: 2 },
-        "13": { nombre: "Byron Ulloa y Esposa", pases: 2 },
-        "14": { nombre: "Mario Núñez y Esposa", pases: 2 },
-        "15": { nombre: "Nelson Núñez y Esposa", pases: 2 },
-        "16": { nombre: "Adriana Acosta y Familia", pases: 3 },
-        "17": { nombre: "Estalin López y Esposa", pases: 2 },
-        "18": { nombre: "Félix Rosero y Esposa", pases: 2 },
-        "19": { nombre: "Ricardo y Esposa", pases: 2 },
-        "20": { nombre: "Juan Ochoa y Esposa", pases: 4 },
-        "21": { nombre: "Carlos Mota y Esposa", pases: 2 },
-        "22": { nombre: "Rosa Rosero", pases: 1 },
-        "23": { nombre: "Jeremy Helsel", pases: 1 },
-        "24": { nombre: "Tony López", pases: 1 },
-        "25": { nombre: "Rodrigo Bayas y Familia", pases: 4 },
-        "26": { nombre: "Miguel Rosero", pases: 1 },
-        "27": { nombre: "Víctor Florence", pases: 2 },
-        "28": { nombre: "Manuela Gill", pases: 1 },
-        "29": { nombre: "Marcos Santana y Esposa", pases: 2 },
-        "30": { nombre: "Guido Reinoso y Esposa", pases: 2 },
-        "31": { nombre: "Nicole Berrios", pases: 1 },
-        "32": { nombre: "Leysha", pases: 1 },
-        "33": { nombre: "Gustavo Silva", pases: 1 },
-        "34": { nombre: "Ben Swann", pases: 1 },
-        "35": { nombre: "Juan and Anna", pases: 2 },
-        "36": { nombre: "Gino Lavarone", pases: 1 },
-        "37": { nombre: "Ángel Villagómez", pases: 2 },
-        "38": { nombre: "Gelena Solano", pases: 2 },
-        "39": { nombre: "Héctor Vides y Esposa", pases: 2 },
-        "40": { nombre: "Natalia D", pases: 2 },
-        "41": { nombre: "Touria y Familia", pases: 2 },
-        "42": { nombre: "Miggy y Esposo", pases: 2 },
-        "43": { nombre: "Whitney", pases: 1 },
-        "44": { nombre: "Benji", pases: 1 },
-        "45": { nombre: "Ms. Befumo", pases: 1 },
-        "46": { nombre: "Marlon Mora y Esposa", pases: 2 },
-        "47": { nombre: "Diego", pases: 1 },
-        "48": { nombre: "James Stauffer", pases: 2 },
-        "49": { nombre: "Ashley Pérez", pases: 1 },
-        "50": { nombre: "Angel Villamos", pases: 1 },
-        "51": { nombre: "Tommy and Riley", pases: 2 },
-        "52": { nombre: "Owen and Mecenna", pases: 2 },
-        "53": { nombre: "Married by Roxy", pases: 2 },
-        "54": { nombre: "Beatriz and Héctor", pases: 2 },
-        "55": { nombre: "Shane", pases: 1 },
-        "56": { nombre: "Drew", pases: 2 },
-        "57": { nombre: "Joe Matenti", pases: 2 },
-        "58": { nombre: "Jessica Alvarado", pases: 2 },
-        "59": { nombre: "Ana", pases: 1 },
-        "60": { nombre: "Kevin", pases: 1 },
-        "61": { nombre: "Ray", pases: 1 },
-        "62": { nombre: "Martín", pases: 1 },
-        "63": { nombre: "Sergio Meza y Esposa", pases: 2 },
-        "64": { nombre: "Harrison and Kayla", pases: 2 },
-        "65": { nombre: "Bailee", pases: 1 }
+        "1": { nombre: "Rosita Rosero", pases: 1 }
     },
-    invitadoDefault: { nombre: "Miguel Núñez y Familia", pases: 3 },
+    invitadoDefault: { nombre: "Rosita Rosero", pases: 1 },
     paramId: 'id'
 };
 
@@ -718,7 +654,8 @@ function initCountdown() {
 }
 
 function getEventDateFromConfig() {
-    return new Date('2026-06-27T19:00:00').getTime();
+    const eventDate = window.config && window.config.event && window.config.event.eventDate;
+    return new Date(eventDate || '2026-08-01T13:30:00').getTime();
 }
 
 function initSectionSeparadorRotativo() {
@@ -727,6 +664,7 @@ function initSectionSeparadorRotativo() {
 
     const imageEl = section.querySelector('.separador-foto-img');
     const raw = String(section.getAttribute('data-rotativo-images') || '').trim();
+    const rawPositions = String(section.getAttribute('data-rotativo-positions') || '').trim();
     if (!imageEl || !raw) return;
 
     const images = raw.split(',').map(function(item) {
@@ -735,12 +673,21 @@ function initSectionSeparadorRotativo() {
 
     if (images.length < 2) return;
 
+    const positions = rawPositions.split(',').map(function(item) {
+        return item.trim();
+    }).filter(Boolean);
+
+    function applyRotativoImage(nextIndex) {
+        imageEl.src = images[nextIndex];
+        if (positions[nextIndex]) imageEl.style.objectPosition = positions[nextIndex];
+    }
+
     let index = 0;
-    imageEl.src = images[index];
+    applyRotativoImage(index);
 
     setInterval(function() {
         index = (index + 1) % images.length;
-        imageEl.src = images[index];
+        applyRotativoImage(index);
     }, 3200);
 }
 
@@ -1191,8 +1138,8 @@ const translations = {
     portada_kicker: "Celebremos juntos a",
     portada_boton: "Abrir invitación",
     scroll_hint: "Desliza hacia abajo",
-    names_text: "Hay logros que se construyen en silencio, con dedicación, constancia y pasión. Hoy quiero que seas parte de este momento que marca un nuevo capítulo en mi carrera.",
-    invitado_mensaje: "Tu presencia hace este logro aún más especial",
+    names_text: "Setenta y cinco años de vida construida con trabajo, familia y fe. Hoy quiero que seas parte de este capítulo que lo celebra todo.",
+    invitado_mensaje: "Tu presencia hace este momento aún más memorable",
     invitado_lugares: "Hemos reservado para ti {pases} espacios para adultos",
     countdown_titulo: ["F","alta","m","uy","p","oco","p","ara","e","l","g","ran","d","ía"],
     countdown_dias: "Días",
@@ -1200,27 +1147,27 @@ const translations = {
     countdown_min: "Min",
     countdown_seg: "Seg",
     btn_calendar: "Agregar al calendario",
-    nuevo_texto: "Este logro no habría sido posible sin la dedicación, el apoyo incondicional de quienes confiaron en mí y la firme convicción de nunca conformarme con menos de lo mejor.",
-    nuevo_titulo: "¡Celebremos juntos!",
+    nuevo_texto: "Una nueva aventura comienza. La lavandería es más que un negocio: es el fruto de años de esfuerzo, y hoy la bendecimos rodeados de quienes más queremos.",
+    nuevo_titulo: "¡Que empiece la celebración!",
     itinerary_title: "Itinerario",
-    itinerary_item_1: "Cocktail Hour",
-    itinerary_item_2: "Protocolo y gran anuncio",
+    itinerary_item_1: "Bendición del Negocio",
+    itinerary_item_2: "Cocktail",
     itinerary_item_3: "Cena",
-    itinerary_item_4: "Palabras emotivas",
+    itinerary_item_4: "Palabras Emotivas",
     itinerary_item_5: "Despedida",
     recepcion_titulo: "Recepción",
     btn_location: "Ver ubicación",
     dresscode_title: "Código de vestimenta",
-    dresscode_text: "Esta noche merece tu mejor versión. Te invitamos a vestir formal en tono negro para celebrar juntos este gran logro.",
+    dresscode_text: "Esta noche merece tu mejor versión. Te invitamos a vestir en Gala Formal para celebrar juntos este gran momento.",
     gifts_title: "Lluvia de Sobres",
-    gifts_text: "Tu presencia es mi mejor regalo. Si deseas tener un detalle conmigo, contaremos con lluvia de sobres.",
-    trayectoria_title: "Mi Trayectoria",
-    trayectoria_text: "Un recorrido de estos últimos años llenos de experiencias, crecimiento y dedicación.",
+    gifts_text: "Tu presencia es el mejor regalo. Si deseas tener un detalle con Stalin, contaremos con lluvia de sobres.",
+    trayectoria_title: "Momentos que brillan",
+    trayectoria_text: "Un recorrido por los momentos más especiales de estos 75 años.",
     playlist_title: "Playlist",
     playlist_text: "Ayúdame a crear la playlist perfecta para esta noche. Agrega esa canción que no puede faltar.",
     btn_playlist: "Agregar canción",
     wishes_title: "Buenos Deseos",
-    wishes_text: "Déjame un mensaje especial para guardar este recuerdo por siempre en mi corazón.",
+    wishes_text: "Déjale un mensaje especial a Stalin para guardar este recuerdo por siempre.",
     btn_wish_open: "Déjame tu deseo",
     btn_wish_read: "Leer buenos deseos",
     wish_label_nombre: "Nombre",
@@ -1230,7 +1177,7 @@ const translations = {
     btn_wish_submit: "Enviar deseo",
     wishes_empty: "Aún no hay deseos. Sé el primero en dejarme uno.",
     rsvp_title: "Confirmar Asistencia",
-    rsvp_intro: "Tu presencia hará este día aún más especial. Por favor confirma tu asistencia antes del 19 de Junio.",
+    rsvp_intro: "Tu presencia hará este día aún más especial. Por favor confirma tu asistencia antes del 25 de julio.",
     rsvp_label_nombre: "Nombre del invitado",
     rsvp_label_asistencia: "Asistirás",
     rsvp_si: "Sí, con mucho gusto",
@@ -1247,18 +1194,18 @@ const translations = {
     rsvp_popup_error: "No pudimos guardar tu confirmación. Intenta nuevamente.",
     rsvp_confirmed_intro: "Gracias por haber completado el formulario de asistencia.",
     rsvp_final_si: "Gracias por confirmar tu asistencia. Este mensaje quedará visible de forma permanente.",
-    wa_si: "Hola! Soy {nombre}, confirmo mi asistencia a la celebración de Anthony Jr. Lopez el 27 de junio. Asistiré con {pases} {pases_label}.",
-    wa_no: "Hola! Soy {nombre}, lamentablemente no podré asistir a la celebración de Anthony Jr. Lopez el 27 de junio.",
-    calendar_url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Celebremos%20a%20Anthony%20Jr.%20Lopez&dates=20260627T190000/20260627T230000&ctz=America/New_York&details=Celebremos%20juntos&location=27-05%2039th%20Ave%2C%20Long%20Island%20City%2C%20NY%2011101%2C%20United%20States",
-    frase_final: "La excelencia no se anuncia, se demuestra - y ahora viene la mejor parte: ¡celebrarlo juntos!",
+    wa_si: "Hola! Soy {nombre}, confirmo mi asistencia a la celebración de Irman Estalin Lopez el 1 de agosto. Asistiré con {pases} {pases_label}.",
+    wa_no: "Hola! Soy {nombre}, lamentablemente no podré asistir a la celebración de Irman Estalin Lopez el 1 de agosto.",
+    calendar_url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Celebramos%20a%20Irman%20Estalin%20Lopez&dates=20260801T133000/20260802T220000&ctz=America/New_York&details=Bendici%C3%B3n%20del%20negocio%20y%20celebraci%C3%B3n%2075%20a%C3%B1os&location=52-11%20111th%20St%2C%20Queens%2C%20NY%2011368",
+    frase_final: "Setenta y cinco años de historia, familia y fe. Esta noche, todo eso se celebra contigo.",
   },
 
   en: {
     portada_kicker: "Join us in celebrating",
     portada_boton: "Open invitation",
     scroll_hint: "Scroll to explore",
-    names_text: "Some achievements are built quietly — through discipline, resilience, and an unwavering commitment to excellence. Tonight, I want you here to mark this new chapter with me.",
-    invitado_mensaje: "Having you here means everything",
+    names_text: "Seventy-five years of a life built with work, family, and faith. Today, I want you to be part of this chapter that celebrates it all.",
+    invitado_mensaje: "Your presence makes this moment even more memorable",
     invitado_lugares: "We've reserved {pases} adult spaces in your honor",
     countdown_titulo: ["T","he","b","ig","n","ight","i","s","a","lmost","h","ere","",""],
     countdown_dias: "Days",
@@ -1266,27 +1213,27 @@ const translations = {
     countdown_min: "Min",
     countdown_seg: "Sec",
     btn_calendar: "Add to calendar",
-    nuevo_texto: "This achievement wouldn’t have been possible without the dedication, the unconditional support of those who believed in me, and the determination to never settle for anything less than the best.",
-    nuevo_titulo: "Let's celebrate together!",
+    nuevo_texto: "A new adventure begins. The laundry is more than a business: it is the fruit of years of effort, and today we bless it surrounded by those we love most.",
+    nuevo_titulo: "Let the celebration begin!",
     itinerary_title: "Schedule",
-    itinerary_item_1: "Cocktail Hour",
-    itinerary_item_2: "Formal program & big announcement",
+    itinerary_item_1: "Business Blessing",
+    itinerary_item_2: "Cocktail",
     itinerary_item_3: "Dinner",
     itinerary_item_4: "Heartfelt remarks",
     itinerary_item_5: "Farewell",
     recepcion_titulo: "Reception",
     btn_location: "View location",
     dresscode_title: "Dress Code",
-    dresscode_text: "Tonight calls for your finest. We invite you to dress in formal black — because every great achievement deserves a room that looks the part.",
+    dresscode_text: "Tonight calls for your finest. We invite you to wear formal gala attire as we celebrate this great moment together.",
     gifts_title: "Envelope Shower",
-    gifts_text: "Your presence is the greatest gift of all. Should you wish to offer a personal gesture, we'll have an envelope shower to receive your kind tokens of appreciation.",
-    trayectoria_title: "My Journey",
-    trayectoria_text: "Years of growth, learning, and unforgettable experiences that shaped who I am today.",
+    gifts_text: "Your presence is the greatest gift. If you wish to offer Stalin a personal gesture, there will be an envelope shower.",
+    trayectoria_title: "Moments That Shine",
+    trayectoria_text: "A look back at the most special moments of these 75 years.",
     playlist_title: "Playlist",
     playlist_text: "Help set the tone for the evening. Add the song that belongs on tonight's soundtrack — the one that can't be left out.",
     btn_playlist: "Add a song",
     wishes_title: "Best Wishes",
-    wishes_text: "Leave me a message — something I'll carry with me long after tonight.",
+    wishes_text: "Leave Stalin a special message to keep this memory forever.",
     btn_wish_open: "Write a wish",
     btn_wish_read: "Read wishes",
     wish_label_nombre: "Name",
@@ -1296,7 +1243,7 @@ const translations = {
     btn_wish_submit: "Send",
     wishes_empty: "No wishes yet. Be the first to leave one.",
     rsvp_title: "RSVP",
-    rsvp_intro: "Your presence would make this evening truly unforgettable. Please confirm your attendance by June 19th.",
+    rsvp_intro: "Your presence will make this day even more special. Please confirm your attendance by July 25th.",
     rsvp_label_nombre: "Guest name",
     rsvp_label_asistencia: "Will you be joining us?",
     rsvp_si: "Absolutely, I'll be there",
@@ -1313,10 +1260,10 @@ const translations = {
     rsvp_popup_error: "We couldn't save your confirmation. Please try again.",
     rsvp_confirmed_intro: "Your response has been recorded. Thank you!",
     rsvp_final_si: "Thank you for confirming your attendance. This message will remain permanently visible.",
-    wa_si: "Hi! This is {nombre}. I'm happy to confirm my attendance at Anthony Jr. Lopez's celebration on June 27th. I'll be attending with {pases} {pases_label}.",
-    wa_no: "Hi! This is {nombre}. Unfortunately, I won't be able to attend Anthony Jr. Lopez's celebration on June 27th.",
-    calendar_url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Anthony%20Jr.%20Lopez%20%C2%B7%20Promotion%20Celebration&dates=20260627T190000/20260627T230000&ctz=America/New_York&details=A%20celebration%20in%20honor%20of%20Anthony%20Jr.%20Lopez%27s%20career%20promotion.&location=27-05%2039th%20Ave%2C%20Long%20Island%20City%2C%20NY%2011101%2C%20United%20States",
-    frase_final: "Excellence speaks for itself — and the best part? Tonight, we get to celebrate it together.",
+    wa_si: "Hi! This is {nombre}. I'm happy to confirm my attendance at Irman Estalin Lopez's celebration on August 1st. I'll be attending with {pases} {pases_label}.",
+    wa_no: "Hi! This is {nombre}. Unfortunately, I won't be able to attend Irman Estalin Lopez's celebration on August 1st.",
+    calendar_url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Celebramos%20a%20Irman%20Estalin%20Lopez&dates=20260801T133000/20260802T220000&ctz=America/New_York&details=Bendici%C3%B3n%20del%20negocio%20y%20celebraci%C3%B3n%2075%20a%C3%B1os&location=52-11%20111th%20St%2C%20Queens%2C%20NY%2011368",
+    frase_final: "Seventy-five years of history, family, and faith. Tonight, all of that is celebrated with you.",
   }
 };
 

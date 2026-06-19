@@ -60,7 +60,7 @@
             window.config
             && window.config.event
             && window.config.event.defaultEventId
-            || "promocion-anthonyjr-2026"
+            || "irmanstalin2026"
         ).trim();
 
         return queryEventId || defaultEventId;

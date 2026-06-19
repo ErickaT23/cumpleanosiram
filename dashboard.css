@@ -2,8 +2,8 @@
     --bg: #000000;
     --paper: #000000;
     --paper-strong: #000000;
-    --rose: #C8D8E8;
-    --rose-dark: #1A3A5C;
+    --rose: #C9A84C;
+    --rose-dark: #0a0a0a;
     --rose-deep: #0D2840;
     --beige: #D4E4F0;
     --gold-1: #EEF4F8;
@@ -358,7 +358,7 @@ body {
 
 .filter-chip.is-active {
     border-color: rgba(200, 216, 232, 0.72);
-    background: #1A3A5C;
+    background: #0a0a0a;
     color: #FFFFFF;
 }
 
@@ -399,7 +399,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     border-bottom: 1px solid rgba(200, 216, 232, 0.2);
-    background: #1A3A5C;
+    background: #0a0a0a;
 }
 
 .confirmations-table tbody tr {

@@ -3236,6 +3236,7 @@ html.js-anim .section.visible :is(.event-icon, .playlist-icon, .media-share-icon
     text-align: center;
     width: 100%;
     margin: 0;
+    padding: 10px;
     font-size: 23px;
 }
 
@@ -3429,6 +3430,23 @@ body {
     font-family: var(--title) !important;
 }
 
+.bendiciones-texto {
+    color: #F5EDD6 !important;
+    -webkit-text-fill-color: #F5EDD6 !important;
+    font-family: "Cormorant Garamond", serif !important;
+    font-weight: 300 !important;
+    text-align: center;
+}
+
+.bendiciones-nombre {
+    color: #C9A84C !important;
+    -webkit-text-fill-color: #C9A84C !important;
+    font-family: "Great Vibes", "Cormorant Garamond", serif !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.02em !important;
+    text-transform: none !important;
+}
+
 .portada-boton,
 .btn-calendar,
 .btn-location,
@@ -3515,6 +3533,23 @@ body {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+}
+
+#bendiciones .bendiciones-fondo {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 0 !important;
+    background-image: url("images/FP.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#bendiciones .events-overlay {
+    display: block !important;
+    z-index: 1 !important;
+    background: rgb(0 0 0 / 28%) !important;
+    pointer-events: none;
 }
 
 .agenda-section {

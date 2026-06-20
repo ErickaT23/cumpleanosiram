@@ -1135,26 +1135,29 @@ let currentLang = 'es';
 
 const translations = {
   es: {
-    portada_kicker: "Celebremos juntos a",
+    portada_kicker: "Acompáñanos a celebrar a",
     portada_boton: "Abrir invitación",
     scroll_hint: "Desliza hacia abajo",
-    names_text: "Setenta y cinco años de vida construida con trabajo, familia y fe. Hoy quiero que seas parte de este capítulo que lo celebra todo.",
+    names_text: "Sesenta y cinco años de vida construida con trabajo, familia y fe. Hoy quiero que seas parte de este capítulo que lo celebra todo.",
     invitado_mensaje: "Tu presencia hace este momento aún más memorable",
     invitado_lugares: "Hemos reservado para ti {pases} espacios para adultos",
     countdown_titulo: ["F","alta","m","uy","p","oco","p","ara","e","l","g","ran","d","ía"],
+    countdown_titulo_simple: "¡Solo falta!",
     countdown_dias: "Días",
     countdown_horas: "Horas",
     countdown_min: "Min",
     countdown_seg: "Seg",
     btn_calendar: "Agregar al calendario",
-    nuevo_texto: "Una nueva aventura comienza. La lavandería es más que un negocio: es el fruto de años de esfuerzo, y hoy la bendecimos rodeados de quienes más queremos.",
-    nuevo_titulo: "¡Que empiece la celebración!",
+    nuevo_texto: "Hoy celebramos 65 años de una vida llena de amor, familia y fe. Y como si fuera poco, también bendecimos el inicio de un nuevo sueño: un negocio que nace con esfuerzo, ilusión y la certeza de que lo mejor está por venir.",
+    nuevo_titulo: "¡Celebremos juntos!",
     itinerary_title: "Itinerario",
     itinerary_item_1: "Bendición del Negocio",
-    itinerary_item_2: "Cocktail",
+    itinerary_item_2: "Protocolo formal",
     itinerary_item_3: "Cena",
-    itinerary_item_4: "Palabras Emotivas",
-    itinerary_item_5: "Despedida",
+    itinerary_item_4: "Despedida",
+    evento1_titulo: "Bendición del Negocio",
+    evento1_lugar: "WOODSIDE LAUNDRY, I&L Laundry Corp.",
+    evento2_titulo: "Celebración",
     recepcion_titulo: "Recepción",
     btn_location: "Ver ubicación",
     dresscode_title: "Código de vestimenta",
@@ -1162,7 +1165,11 @@ const translations = {
     gifts_title: "Lluvia de Sobres",
     gifts_text: "Tu presencia es el mejor regalo. Si deseas tener un detalle con Stalin, contaremos con lluvia de sobres.",
     trayectoria_title: "Momentos que brillan",
-    trayectoria_text: "Un recorrido por los momentos más especiales de estos 75 años.",
+    trayectoria_text: "Un recorrido por los momentos más especiales de estos 65 años.",
+    album_title: "Álbum Digital",
+    album_text: "Revive cada momento especial. Accede al álbum de fotos de este gran día.",
+    btn_album: "Ver álbum",
+    album_qr_label: "Escanea para abrir",
     playlist_title: "Playlist",
     playlist_text: "Ayúdame a crear la playlist perfecta para esta noche. Agrega esa canción que no puede faltar.",
     btn_playlist: "Agregar canción",
@@ -1196,31 +1203,34 @@ const translations = {
     rsvp_final_si: "Gracias por confirmar tu asistencia. Este mensaje quedará visible de forma permanente.",
     wa_si: "Hola! Soy {nombre}, confirmo mi asistencia a la celebración de Irman Estalin Lopez el 1 de agosto. Asistiré con {pases} {pases_label}.",
     wa_no: "Hola! Soy {nombre}, lamentablemente no podré asistir a la celebración de Irman Estalin Lopez el 1 de agosto.",
-    calendar_url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Celebramos%20a%20Irman%20Estalin%20Lopez&dates=20260801T133000/20260802T220000&ctz=America/New_York&details=Bendici%C3%B3n%20del%20negocio%20y%20celebraci%C3%B3n%2075%20a%C3%B1os&location=52-11%20111th%20St%2C%20Queens%2C%20NY%2011368",
-    frase_final: "Setenta y cinco años de historia, familia y fe. Esta noche, todo eso se celebra contigo.",
+    calendar_url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Celebramos%20a%20Irman%20Estalin%20Lopez&dates=20260801T130000/20260802T010000&ctz=America/New_York&details=Bendici%C3%B3n%20del%20negocio%20y%20celebraci%C3%B3n%2065%20a%C3%B1os&location=52-11%20111th%20St%2C%20Queens%2C%20NY%2011368",
+    frase_final: "Sesenta y cinco años de historia, familia y fe. Esta noche, todo eso se celebra contigo.",
   },
 
   en: {
     portada_kicker: "Join us in celebrating",
     portada_boton: "Open invitation",
     scroll_hint: "Scroll to explore",
-    names_text: "Seventy-five years of a life built with work, family, and faith. Today, I want you to be part of this chapter that celebrates it all.",
+    names_text: "Sixty-five years shaped by work, family, and faith. Today, I want you to be part of a chapter that celebrates it all.",
     invitado_mensaje: "Your presence makes this moment even more memorable",
-    invitado_lugares: "We've reserved {pases} adult spaces in your honor",
+    invitado_lugares: "We've reserved {pases} adult seats in your honor",
     countdown_titulo: ["T","he","b","ig","n","ight","i","s","a","lmost","h","ere","",""],
+    countdown_titulo_simple: "Almost time!",
     countdown_dias: "Days",
     countdown_horas: "Hours",
     countdown_min: "Min",
     countdown_seg: "Sec",
     btn_calendar: "Add to calendar",
-    nuevo_texto: "A new adventure begins. The laundry is more than a business: it is the fruit of years of effort, and today we bless it surrounded by those we love most.",
-    nuevo_titulo: "Let the celebration begin!",
+    nuevo_texto: "Today we celebrate 65 years of a life filled with love, family, and faith. And as if that weren't enough, we also bless the beginning of a new dream: a business born from hard work, hope, and the confidence that the best is yet to come.",
+    nuevo_titulo: "Let's celebrate together!",
     itinerary_title: "Schedule",
     itinerary_item_1: "Business Blessing",
-    itinerary_item_2: "Cocktail",
+    itinerary_item_2: "Formal program",
     itinerary_item_3: "Dinner",
-    itinerary_item_4: "Heartfelt remarks",
-    itinerary_item_5: "Farewell",
+    itinerary_item_4: "Farewell",
+    evento1_titulo: "Business Blessing",
+    evento1_lugar: "WOODSIDE LAUNDRY, I&L Laundry Corp.",
+    evento2_titulo: "Celebration",
     recepcion_titulo: "Reception",
     btn_location: "View location",
     dresscode_title: "Dress Code",
@@ -1228,7 +1238,11 @@ const translations = {
     gifts_title: "Envelope Shower",
     gifts_text: "Your presence is the greatest gift. If you wish to offer Stalin a personal gesture, there will be an envelope shower.",
     trayectoria_title: "Moments That Shine",
-    trayectoria_text: "A look back at the most special moments of these 75 years.",
+    trayectoria_text: "A look back at the most special moments of these 65 years.",
+    album_title: "Digital Album",
+    album_text: "Relive every special moment. Access the photo album from this big day.",
+    btn_album: "View album",
+    album_qr_label: "Scan to open",
     playlist_title: "Playlist",
     playlist_text: "Help set the tone for the evening. Add the song that belongs on tonight's soundtrack — the one that can't be left out.",
     btn_playlist: "Add a song",
@@ -1248,7 +1262,7 @@ const translations = {
     rsvp_label_asistencia: "Will you be joining us?",
     rsvp_si: "Absolutely, I'll be there",
     rsvp_no: "I won't be able to make it",
-    rsvp_label_pases: "Passes",
+    rsvp_label_pases: "Guest passes",
     guest_singular: "pass",
     guest_plural: "passes",
     btn_rsvp: "Confirm attendance",
@@ -1262,8 +1276,8 @@ const translations = {
     rsvp_final_si: "Thank you for confirming your attendance. This message will remain permanently visible.",
     wa_si: "Hi! This is {nombre}. I'm happy to confirm my attendance at Irman Estalin Lopez's celebration on August 1st. I'll be attending with {pases} {pases_label}.",
     wa_no: "Hi! This is {nombre}. Unfortunately, I won't be able to attend Irman Estalin Lopez's celebration on August 1st.",
-    calendar_url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Celebramos%20a%20Irman%20Estalin%20Lopez&dates=20260801T133000/20260802T220000&ctz=America/New_York&details=Bendici%C3%B3n%20del%20negocio%20y%20celebraci%C3%B3n%2075%20a%C3%B1os&location=52-11%20111th%20St%2C%20Queens%2C%20NY%2011368",
-    frase_final: "Seventy-five years of history, family, and faith. Tonight, all of that is celebrated with you.",
+    calendar_url: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Celebramos%20a%20Irman%20Estalin%20Lopez&dates=20260801T130000/20260802T010000&ctz=America/New_York&details=Bendici%C3%B3n%20del%20negocio%20y%20celebraci%C3%B3n%2065%20a%C3%B1os&location=52-11%20111th%20St%2C%20Queens%2C%20NY%2011368",
+    frase_final: "Sixty-five years of history, family, and faith. Tonight, all of that is celebrated with you.",
   }
 };
 
@@ -1271,7 +1285,7 @@ function applyTranslation(lang) {
   currentLang = lang;
   const t = translations[lang];
   if (!t) return;
-  const titleKeysWithSpans = ['recepcion_titulo', 'rsvp_title', 'wishes_title', 'playlist_title', 'gifts_title'];
+  const titleKeysWithSpans = ['recepcion_titulo', 'evento1_titulo', 'evento2_titulo', 'album_title', 'rsvp_title', 'wishes_title', 'playlist_title', 'gifts_title'];
 
   document.querySelectorAll('[data-i18n]').forEach(function(el) {
     const key = el.getAttribute('data-i18n');
@@ -1335,6 +1349,39 @@ function applyTranslation(lang) {
     if (inicialEl && restoEl) {
       inicialEl.textContent = word.charAt(0);
       restoEl.textContent = word.slice(1);
+    }
+  }
+
+  document.querySelectorAll('[data-i18n="evento1_titulo"], [data-i18n="evento2_titulo"]').forEach(function(titleEl) {
+    const key = titleEl.getAttribute('data-i18n');
+    const word = t[key];
+    if (!word) return;
+
+    const initialEl = titleEl.querySelector('.event-inicial');
+    const restEl = titleEl.querySelector('.event-resto');
+    if (initialEl && restEl) {
+      initialEl.textContent = word.charAt(0);
+      restEl.textContent = word.slice(1);
+    } else {
+      titleEl.textContent = word;
+    }
+  });
+
+  const albumTitle = document.querySelector('[data-i18n="album_title"]');
+  if (albumTitle && t.album_title) {
+    const words = t.album_title.split(' ');
+    const iniciales = albumTitle.querySelectorAll('.album-title-inicial');
+    const restos = albumTitle.querySelectorAll('.album-title-resto');
+    if (iniciales[0] && restos[0] && words[0]) {
+      iniciales[0].textContent = words[0].charAt(0);
+      restos[0].textContent = words[0].slice(1);
+    }
+    if (iniciales[1] && restos[1] && words[1]) {
+      iniciales[1].textContent = words[1].charAt(0);
+      restos[1].textContent = words[1].slice(1);
+    } else if (iniciales[1] && restos[1]) {
+      iniciales[1].textContent = '';
+      restos[1].textContent = '';
     }
   }
 

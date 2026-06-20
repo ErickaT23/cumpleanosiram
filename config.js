@@ -38,8 +38,8 @@ const config = {
     evento: {
         bendicion: {
             titulo: "Bendición del Negocio",
-            lugar: "La Lavandería de Stalin",
-            hora: "1:30 PM",
+            lugar: "WOODSIDE LAUNDRY, I&L Laundry Corp.",
+            hora: "1:00 PM",
             direccion: "54-22 31st Ave, Woodside, NY 11377, United States",
             ubicacionUrl: "https://share.google/LOSU7umZPkkgv4c7U"
         },

@@ -33,7 +33,7 @@
     <section class="portada" id="portada">
         <div class="portada-fondo"></div>
         <div class="portada-contenido">
-            <p class="portada-subtitulo">Acompáñanos a celebrar a</p>
+            <p class="portada-subtitulo" data-i18n="portada_kicker">Acompáñanos a celebrar a</p>
             <h1 class="portada-nombre-principal">Irman Estalin</h1>
             <button type="button" class="portada-sobre-btn" id="portada-envelope-trigger" aria-label="Abrir invitación desde el sobre">
                 <img src="images/ENVGATSBY.png" alt="Sobre de invitación" class="portada-sobre-img">
@@ -73,7 +73,7 @@
                 </div>
             </div>
 
-            <p class="names-text">Setenta y cinco años de vida construida con trabajo, familia y fe. Hoy quiero que seas parte de este capítulo que lo celebra todo.</p>
+            <p class="names-text" data-i18n="names_text">Sesenta y cinco años de vida construida con trabajo, familia y fe. Hoy quiero que seas parte de este capítulo que lo celebra todo.</p>
         </section>
 
         <!-- Sección Invitado -->
@@ -82,7 +82,7 @@
             <div class="events-overlay"></div>
             <div class="invitado-tarjeta event-card">
                 <div class="invitado-contenido">
-                    <p class="invitado-mensaje">Tu presencia hace este momento aún más memorable</p>
+                    <p class="invitado-mensaje" data-i18n="invitado_mensaje">Tu presencia hace este momento aún más memorable</p>
                     <p class="invitado-nombre" id="nombre-invitado">Nombre del Invitado</p>
                     <p class="invitado-lugares" data-i18n-template="invitado_lugares">Hemos reservado para ti <span id="numero-lugares">3</span><span id="texto-lugares"> espacios para adultos</span></p>
                 </div>
@@ -94,7 +94,7 @@
             <div class="countdown-fondo"></div>
             <div class="countdown-overlay"></div>
             <div class="section-inner">
-                <h2 class="countdown-titulo">Solo falta!</h2>
+                <h2 class="countdown-titulo" data-i18n="countdown_titulo_simple">¡Solo falta!</h2>
                 <div class="countdown" id="countdown-timer">
                     <div class="countdown-item">
                         <span class="countdown-number" id="days">00</span>
@@ -116,9 +116,20 @@
                         <span class="countdown-label" data-i18n="countdown_seg">Seg</span>
                     </div>
                 </div>
-                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Celebramos%20a%20Irman%20Estalin%20Lopez&amp;dates=20260801T133000/20260802T220000&amp;ctz=America/New_York&amp;details=Bendici%C3%B3n%20del%20negocio%20y%20celebraci%C3%B3n%2075%20a%C3%B1os&amp;location=52-11%20111th%20St%2C%20Queens%2C%20NY%2011368" target="_blank" class="btn-calendar">
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Celebramos%20a%20Irman%20Estalin%20Lopez&amp;dates=20260801T130000/20260802T010000&amp;ctz=America/New_York&amp;details=Bendici%C3%B3n%20del%20negocio%20y%20celebraci%C3%B3n%2065%20a%C3%B1os&amp;location=52-11%20111th%20St%2C%20Queens%2C%20NY%2011368" target="_blank" class="btn-calendar" data-i18n="btn_calendar">
                     Agregar al calendario
                 </a>
+            </div>
+        </section>
+
+        <section class="section bendiciones-section visible is-visible" id="bendiciones" style="--reveal-order: 3;">
+            <div class="bendiciones-fondo"></div>
+            <div class="events-overlay"></div>
+            <div class="bendiciones-tarjeta">
+                <div class="bendiciones-contenido">
+                    <p class="bendiciones-texto" data-i18n="nuevo_texto">Hoy celebramos 65 años de una vida llena de amor, familia y fe. Y como si fuera poco, también bendecimos el inicio de un nuevo sueño: un negocio que nace con esfuerzo, ilusión y la certeza de que lo mejor está por venir.</p>
+                    <h2 class="bendiciones-nombre" data-i18n="nuevo_titulo">¡Celebremos juntos!</h2>
+                </div>
             </div>
         </section>
 
@@ -133,27 +144,20 @@
                     <article class="itinerary-item">
                         <div class="itinerary-icon" aria-hidden="true"><i class="fa-solid fa-church"></i></div>
                         <p class="itinerary-name">Bendición del Negocio</p>
-                        <p class="itinerary-time">1:30 PM</p>
+                        <p class="itinerary-time">1:00 PM</p>
                         <p class="itinerary-divider" aria-hidden="true">|</p>
                     </article>
 
                     <article class="itinerary-item">
                         <div class="itinerary-icon" aria-hidden="true"><i class="fa-solid fa-martini-glass-citrus"></i></div>
-                        <p class="itinerary-name">Cocktail</p>
-                        <p class="itinerary-time">7:00 PM</p>
+                        <p class="itinerary-name">Protocolo formal</p>
+                        <p class="itinerary-time">8:00 PM</p>
                         <p class="itinerary-divider" aria-hidden="true">|</p>
                     </article>
 
                     <article class="itinerary-item">
                         <div class="itinerary-icon" aria-hidden="true"><i class="fa-solid fa-utensils"></i></div>
                         <p class="itinerary-name">Cena</p>
-                        <p class="itinerary-time">8:00 PM</p>
-                        <p class="itinerary-divider" aria-hidden="true">|</p>
-                    </article>
-
-                    <article class="itinerary-item">
-                        <div class="itinerary-icon" aria-hidden="true"><i class="fa-solid fa-heart"></i></div>
-                        <p class="itinerary-name">Palabras Emotivas</p>
                         <p class="itinerary-time">9:00 PM</p>
                         <p class="itinerary-divider" aria-hidden="true">|</p>
                     </article>
@@ -161,7 +165,7 @@
                     <article class="itinerary-item">
                         <div class="itinerary-icon" aria-hidden="true"><i class="fa-solid fa-champagne-glasses"></i></div>
                         <p class="itinerary-name">Despedida</p>
-                        <p class="itinerary-time">10:00 PM</p>
+                        <p class="itinerary-time">12:30 AM</p>
                     </article>
                 </div>
             </div>
@@ -181,26 +185,26 @@
                     <div class="event-icon zoom-in-element">
                         <img src="images/VENUE.png" alt="Lugar de bendición" class="event-photo-icon">
                     </div>
-                    <h3 class="event-titulo">
+                    <h3 class="event-titulo" data-i18n="evento1_titulo">
                         <span class="event-inicial">B</span><span class="event-resto">endición del Negocio</span>
                     </h3>
-                    <p class="event-time">1:30 PM</p>
-                    <p class="event-lugar">La Lavandería de Stalin</p>
+                    <p class="event-time">1:00 PM</p>
+                    <p class="event-lugar" data-i18n="evento1_lugar">WOODSIDE LAUNDRY, I&amp;L Laundry Corp.</p>
                     <p class="event-direccion">54-22 31st Ave, Woodside, NY 11377, United States</p>
-                    <a href="https://share.google/LOSU7umZPkkgv4c7U" target="_blank" class="btn-location">Ver ubicación</a>
+                    <a href="https://share.google/LOSU7umZPkkgv4c7U" target="_blank" class="btn-location" data-i18n="btn_location">Ver ubicación</a>
                 </div>
 
                 <div class="event-card">
                     <div class="event-icon zoom-in-element">
                         <img src="images/VENUE2.png" alt="Lugar de celebración" class="event-photo-icon">
                     </div>
-                    <h3 class="event-titulo">
+                    <h3 class="event-titulo" data-i18n="evento2_titulo">
                         <span class="event-inicial">C</span><span class="event-resto">elebración</span>
                     </h3>
                     <p class="event-time">7:30 PM</p>
                     <p class="event-lugar">Terrace On The Park</p>
                     <p class="event-direccion">52-11 111th St, Queens, NY 11368, United States</p>
-                    <a href="https://maps.apple/p/Y9vPoC194GsG.D" target="_blank" class="btn-location">Ver ubicación</a>
+                    <a href="https://maps.apple/p/Y9vPoC194GsG.D" target="_blank" class="btn-location" data-i18n="btn_location">Ver ubicación</a>
                 </div>
             </div>
         </section>
@@ -214,7 +218,7 @@
                     <img src="images/DRESSCODE.png" alt="Icono código de vestimenta" class="dresscode-icon">
                     <h2 class="dresscode-title" data-i18n="dresscode_title">Código de vestimenta</h2>
 
-                    <p class="dresscode-text">Esta noche merece tu mejor versión. Te invitamos a vestir en Gala Formal para celebrar juntos este gran momento.</p>
+                    <p class="dresscode-text" data-i18n="dresscode_text">Esta noche merece tu mejor versión. Te invitamos a vestir en Gala Formal para celebrar juntos este gran momento.</p>
                 </div>
 
                 <div class="dresscode-gifts-divider" aria-hidden="true"></div>
@@ -224,7 +228,7 @@
                         <span class="gifts-title-inicial">L</span><span class="gifts-title-resto">luvia de </span><span class="gifts-title-inicial">S</span><span class="gifts-title-resto">obres</span>
                     </h2>
 
-                    <p class="gifts-text">Tu presencia es el mejor regalo. Si deseas tener un detalle con Stalin, contaremos con lluvia de sobres.</p>
+                    <p class="gifts-text" data-i18n="gifts_text">Tu presencia es el mejor regalo. Si deseas tener un detalle con Stalin, contaremos con lluvia de sobres.</p>
                 </div>
             </div>
         </section>
@@ -237,16 +241,16 @@
             <div class="events-fondo"></div>
             <div class="events-overlay"></div>
             <div class="section-inner album-inner">
-                <h2 class="album-title">
+                <h2 class="album-title" data-i18n="album_title">
                     <span class="album-title-inicial">Á</span><span class="album-title-resto">lbum</span>
                     <span class="album-title-space"></span>
                     <span class="album-title-inicial">D</span><span class="album-title-resto">igital</span>
                 </h2>
-                <p class="album-text">Revive cada momento especial. Accede al álbum de fotos de este gran día.</p>
-                <a href="https://drive.google.com/drive/folders/1FeweOEt_kfYUx7r64TYVRRijqnJLVKTN?usp=drive_link" target="_blank" class="btn-album">Ver álbum</a>
+                <p class="album-text" data-i18n="album_text">Revive cada momento especial. Accede al álbum de fotos de este gran día.</p>
+                <a href="https://drive.google.com/drive/folders/1FeweOEt_kfYUx7r64TYVRRijqnJLVKTN?usp=drive_link" target="_blank" class="btn-album" data-i18n="btn_album">Ver álbum</a>
                 <div class="album-qr">
                     <img src="images/QR-IE.png" alt="QR Álbum Digital" class="album-qr-img">
-                    <p class="album-qr-label">Escanea para abrir</p>
+                    <p class="album-qr-label" data-i18n="album_qr_label">Escanea para abrir</p>
                 </div>
             </div>
         </section>
@@ -267,7 +271,7 @@
                         <span class="playlist-title-inicial">P</span><span class="playlist-title-resto">laylist</span>
                     </h2>
 
-                    <p class="playlist-text">Ayúdame a crear la playlist perfecta para esta noche. Agrega esa canción que no puede faltar.</p>
+                    <p class="playlist-text" data-i18n="playlist_text">Ayúdame a crear la playlist perfecta para esta noche. Agrega esa canción que no puede faltar.</p>
 
                     <a href="https://open.spotify.com/playlist/24jAmbbp9GQaifC5yKjQdQ?si=aac434676dcc489e&amp;pt=3df77297d5e387f5b56b206809f54a44" target="_blank" class="btn-playlist" data-i18n="btn_playlist">Agregar canción</a>
                 </article>
@@ -295,7 +299,7 @@
                     <span class="wishes-title-inicial">D</span><span class="wishes-title-resto">eseos</span>
                 </h2>
 
-                <p class="wishes-text">Déjale un mensaje especial a Stalin para guardar este recuerdo por siempre.</p>
+                <p class="wishes-text" data-i18n="wishes_text">Déjale un mensaje especial a Stalin para guardar este recuerdo por siempre.</p>
 
                 <div class="wishes-actions">
                     <div class="wishes-buttons">
@@ -347,7 +351,7 @@
                         </span>
                     </h2>
 
-                    <p class="rsvp-intro">Tu presencia hará este día aún más especial. Por favor confirma tu asistencia antes del 25 de julio.</p>
+                    <p class="rsvp-intro" data-i18n="rsvp_intro">Tu presencia hará este día aún más especial. Por favor confirma tu asistencia antes del 25 de julio.</p>
 
                     <form id="rsvp-form" class="rsvp-form" novalidate>
                         <div class="form-group">
@@ -400,7 +404,7 @@
             <div class="events-overlay"></div>
             <div class="section-inner final-cierre-inner">
                 <article class="frase-card">
-                    <p class="frase-texto">Setenta y cinco años de historia, familia y fe. Esta noche, todo eso se celebra contigo.</p>
+                    <p class="frase-texto" data-i18n="frase_final">Sesenta y cinco años de historia, familia y fe. Esta noche, todo eso se celebra contigo.</p>
                 </article>
             </div>
         </section>

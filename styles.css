@@ -3662,7 +3662,13 @@ body {
 }
 
 #separador-wishes .separador-foto-img {
-    object-position: 30% center !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+}
+
+#separador-wishes {
+    min-height: auto !important;
 }
 
 #separador-rotativo .separador-foto-img {

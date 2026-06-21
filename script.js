@@ -283,9 +283,47 @@ function applyFooterConfig() {
 // ============================================
 const GuestConfig = {
     invitados: {
-        "1": { nombre: "Rosita Rosero", pases: 1 }
+        "1": { nombre: "Rosa Rosero", pases: 1, ninos: 0 },
+        "2": { nombre: "Adriana Acosta", pases: 1, ninos: 2 },
+        "3": { nombre: "Luis Balladares y Sra.", pases: 2, ninos: 0 },
+        "4": { nombre: "Felix Rosero y Familia", pases: 2, ninos: 1 },
+        "5": { nombre: "Miguel Nuñez y Familia", pases: 3, ninos: 0 },
+        "6": { nombre: "Ernesto Mendoza y Familia", pases: 4, ninos: 0 },
+        "7": { nombre: "Margoth Fiallos", pases: 1, ninos: 1 },
+        "8": { nombre: "Reinaldo Fiallos y Sra.", pases: 2, ninos: 0 },
+        "9": { nombre: "Marco Lopez y Familia", pases: 2, ninos: 1 },
+        "10": { nombre: "Mariana Fiallos", pases: 1, ninos: 0 },
+        "11": { nombre: "Vinicio Ortiz y Familia", pases: 2, ninos: 2 },
+        "12": { nombre: "Juan Acosta y Familia", pases: 2, ninos: 2 },
+        "13": { nombre: "Alex Acosta y Familia", pases: 2, ninos: 2 },
+        "14": { nombre: "Alex Dinopolus y Sra.", pases: 2, ninos: 0 },
+        "15": { nombre: "Dr. Reinoso y Sra.", pases: 2, ninos: 0 },
+        "16": { nombre: "Maura Flores", pases: 2, ninos: 0 },
+        "17": { nombre: "Candy Sifuentes", pases: 2, ninos: 0 },
+        "18": { nombre: "Pascual Hernandez", pases: 2, ninos: 0 },
+        "19": { nombre: "Arturo Coyotecatl", pases: 2, ninos: 0 },
+        "20": { nombre: "Ana Alvarez", pases: 1, ninos: 0 },
+        "21": { nombre: "Francisco Canastuj", pases: 1, ninos: 0 },
+        "22": { nombre: "Jose Soto", pases: 2, ninos: 0 },
+        "23": { nombre: "Alex Salazar", pases: 2, ninos: 0 },
+        "24": { nombre: "Danilo Jordan", pases: 2, ninos: 0 },
+        "25": { nombre: "Byron Ulloa y Sra.", pases: 2, ninos: 0 },
+        "26": { nombre: "Alfredo Fiallos", pases: 1, ninos: 0 },
+        "27": { nombre: "Edwin Fiallos", pases: 1, ninos: 0 },
+        "28": { nombre: "Jonathan Fiallos", pases: 1, ninos: 0 },
+        "29": { nombre: "Nelson Nuñez", pases: 2, ninos: 0 },
+        "30": { nombre: "Mario Nuñez", pases: 2, ninos: 0 },
+        "31": { nombre: "Guido Nuñez", pases: 2, ninos: 0 },
+        "32": { nombre: "Vinicio Galarza", pases: 2, ninos: 0 },
+        "33": { nombre: "Freddy Acosta y Sra.", pases: 2, ninos: 0 },
+        "34": { nombre: "Ben", pases: 1, ninos: 0 },
+        "35": { nombre: "Jeremy", pases: 3, ninos: 0 },
+        "36": { nombre: "Juan Ochoa y Sra.", pases: 2, ninos: 0 },
+        "37": { nombre: "Bolívar López", pases: 1, ninos: 0 },
+        "38": { nombre: "Armando Cocha", pases: 1, ninos: 0 },
+        "39": { nombre: "Miguel Farez", pases: 2, ninos: 0 }
     },
-    invitadoDefault: { nombre: "Rosita Rosero", pases: 1 },
+    invitadoDefault: { nombre: "Rosa Rosero", pases: 1, ninos: 0 },
     paramId: 'id'
 };
 
@@ -317,6 +355,7 @@ const InvitadoApp = {
                 id: safeId,
                 nombre: String(invitado.nombre || ''),
                 pases: Math.max(1, Number(invitado.pases) || 1),
+                ninos: Math.max(0, Number(invitado.ninos) || 0),
                 activo: true
             };
         }
@@ -325,6 +364,7 @@ const InvitadoApp = {
             id: safeId,
             nombre: String(GuestConfig.invitadoDefault.nombre || ''),
             pases: Math.max(1, Number(GuestConfig.invitadoDefault.pases) || 1),
+            ninos: Math.max(0, Number(GuestConfig.invitadoDefault.ninos) || 0),
             activo: true
         };
     },
@@ -337,11 +377,13 @@ const InvitadoApp = {
             const eventId = String(window.currentEventId || '').trim();
             const remoteGuest = await rsvpDB.getInvitadoById(eventId, guestId);
             if (!remoteGuest || typeof remoteGuest !== 'object') return null;
+            const localGuest = GuestConfig.invitados[String(guestId || '').trim()] || {};
 
             return {
                 id: String(remoteGuest.id || guestId || 'default'),
                 nombre: String(remoteGuest.nombre || '').trim() || String(GuestConfig.invitadoDefault.nombre || ''),
                 pases: Math.max(1, Number(remoteGuest.pases) || Number(GuestConfig.invitadoDefault.pases) || 1),
+                ninos: Math.max(0, Number(remoteGuest.ninos) || Number(localGuest.ninos) || 0),
                 activo: typeof remoteGuest.activo === 'undefined' ? true : Boolean(remoteGuest.activo)
             };
         } catch (error) {
@@ -354,30 +396,34 @@ const InvitadoApp = {
         const nombreEl = document.getElementById('nombre-invitado');
 
         if (nombreEl) nombreEl.textContent = this.data.nombre;
-        this.renderPasesText(this.data.pases);
+        this.renderPasesText(this.data.pases, this.data.ninos);
     },
 
-    renderPasesText(pases) {
+    renderPasesText(pases, ninos) {
         const lugaresEl = document.querySelector('.invitado-lugares');
         if (!lugaresEl) return;
 
-        const template = String(SiteConfig.textos.mensajePases || '');
-        if (!template.includes('{pases}')) {
-            lugaresEl.textContent = template;
-            return;
-        }
+        const adultos = Math.max(1, Number(pases) || 1);
+        const menores = Math.max(0, Number(ninos) || 0);
+        const isEnglish = currentLang === 'en';
+        const prefix = isEnglish ? "We've reserved for you " : 'Hemos reservado para ti ';
+        const adultText = adultos + ' ' + (isEnglish
+            ? (adultos === 1 ? 'adult' : 'adults')
+            : (adultos === 1 ? 'adulto' : 'adultos'));
+        const childText = menores + ' ' + (isEnglish
+            ? (menores === 1 ? 'child' : 'children')
+            : (menores === 1 ? 'niño' : 'niños'));
 
-        const parts = template.split('{pases}');
         const numeroEl = document.createElement('span');
         numeroEl.id = 'numero-lugares';
-        numeroEl.textContent = String(pases);
+        numeroEl.textContent = adultText;
 
         const textoEl = document.createElement('span');
         textoEl.id = 'texto-lugares';
-        textoEl.textContent = Number(pases) === 1 ? ' espacio para adulto' : ' espacios para adultos';
+        textoEl.textContent = menores > 0 ? ' y ' + childText : '';
 
         lugaresEl.replaceChildren(
-            document.createTextNode(parts[0] || ''),
+            document.createTextNode(prefix),
             numeroEl,
             textoEl
         );
@@ -389,7 +435,9 @@ const InvitadoApp = {
         const guestsSelect = document.getElementById('guest-count');
         const responseYes = document.getElementById('rsvp-response-yes');
         const responseNo = document.getElementById('rsvp-response-no');
-        const totalPases = Math.max(1, Number(this.data && this.data.pases) || 1);
+        const totalAdultos = Math.max(1, Number(this.data && this.data.pases) || 1);
+        const totalNinos = Math.max(0, Number(this.data && this.data.ninos) || 0);
+        const totalPases = Math.max(1, totalAdultos + totalNinos);
 
         if (nameInput) {
             nameInput.value = this.data.nombre;
@@ -946,14 +994,16 @@ function initRSVP() {
     const guestData = InvitadoApp.getData() || {};
     const guestId = String(guestData.id || 'default');
 
+    const totalAllowedPasses = Math.max(1, (Math.max(1, Number(guestData.pases) || 1) + Math.max(0, Number(guestData.ninos) || 0)));
+
     function buildWhatsappMessage(respuesta, passesValue) {
         const t = translations[currentLang] || translations['es'];
         const guestNameInput = document.getElementById('rsvp-name');
         const guestName = String((guestNameInput && guestNameInput.value) || (guestData && guestData.nombre) || 'Invitado').trim();
         const selectedPasses = Math.max(1, Number(passesValue) || 1);
         const pasesLabel = currentLang === 'en'
-            ? (selectedPasses === 1 ? 'adult' : 'adults')
-            : (selectedPasses === 1 ? 'adulto' : 'adultos');
+            ? (selectedPasses === 1 ? 'pass' : 'passes')
+            : (selectedPasses === 1 ? 'pase' : 'pases');
 
         if (respuesta === 'no') {
             return t.wa_no.replace('{nombre}', guestName);
@@ -1012,7 +1062,7 @@ function initRSVP() {
         if (respuesta === 'si') {
             const selectedCount = guestCountSelect ? String(guestCountSelect.value || '').trim() : '';
             const requestedCount = Number(selectedCount);
-            const maxAllowedCount = Math.max(1, Number(guestData.pases) || 1);
+            const maxAllowedCount = totalAllowedPasses;
             const isValidCount = selectedCount
                 && Number.isInteger(requestedCount)
                 && requestedCount >= 1
@@ -1031,7 +1081,7 @@ function initRSVP() {
         const payload = {
             id: guestId,
             nombre: String(guestData.nombre || ''),
-            pasesAsignados: Math.max(1, Number(guestData.pases) || 1),
+            pasesAsignados: totalAllowedPasses,
             respuesta,
             cantidadConfirmada: confirmedCount,
             confirmado: true,
@@ -1321,6 +1371,12 @@ function applyTranslation(lang) {
   document.querySelectorAll('[data-i18n-template]').forEach(function(el) {
     const key = el.getAttribute('data-i18n-template');
     if (t[key] === undefined) return;
+
+    if (key === 'invitado_lugares' && InvitadoApp && typeof InvitadoApp.renderPasesText === 'function') {
+      const guestData = InvitadoApp.getData && InvitadoApp.getData();
+      InvitadoApp.renderPasesText(guestData && guestData.pases, guestData && guestData.ninos);
+      return;
+    }
 
     const passes = Math.max(1, Number(InvitadoApp.getData() && InvitadoApp.getData().pases) || 1);
     const parts = String(t[key]).split('{pases}');

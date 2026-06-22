@@ -38,7 +38,7 @@ const config = {
     evento: {
         bendicion: {
             titulo: "Bendición del Negocio",
-            lugar: "I&L Laundry Corp.",
+            lugar: "WOODSIDE LAUNDRY\nI&L Laundry Corp.",
             hora: "1:00 PM",
             direccion: "54-22 31st Ave, Woodside, NY 11377, United States",
             ubicacionUrl: "https://share.google/LOSU7umZPkkgv4c7U"

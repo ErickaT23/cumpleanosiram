@@ -1227,6 +1227,10 @@ html.js-anim .names-editorial.fade-in-element.is-visible {
     font-family: var(--title);
 }
 
+.event-lugar {
+    white-space: pre-line;
+}
+
 .btn-location,
 .btn-gift,
 .btn-playlist,

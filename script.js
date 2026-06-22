@@ -35,7 +35,7 @@ const externalConfig = window.config || {};
 function resolveEventId() {
     const eventConfig = externalConfig.event || {};
     const eventIdParam = String(eventConfig.eventIdParam || 'eventId').trim() || 'eventId';
-    const defaultEventId = String(eventConfig.defaultEventId || 'irmanstalin2026').trim() || 'irmanstalin2026';
+    const defaultEventId = String(eventConfig.defaultEventId || 'irmanestalin2026').trim() || 'irmanestalin2026';
     const params = new URLSearchParams(window.location.search || '');
     const paramValue = String(params.get(eventIdParam) || '').trim();
     const eventId = paramValue || defaultEventId;
@@ -1209,14 +1209,15 @@ const translations = {
     itinerary_item_6: "Hora loca",
     itinerary_item_7: "Despedida",
     evento1_titulo: "Bendición del Negocio",
-    evento1_lugar: "WOODSIDE LAUNDRY, I&L Laundry Corp.",
+    evento1_lugar: "I&L Laundry Corp.",
     evento2_titulo: "Celebración",
     recepcion_titulo: "Recepción",
     btn_location: "Ver ubicación",
     dresscode_title: "Código de vestimenta",
     dresscode_text: "Esta noche merece tu mejor versión. Te invitamos a vestir en Gala Formal para celebrar juntos este gran momento.",
+    btn_dresscode: "Ideas de Vestuario",
     gifts_title: "Lluvia de Sobres",
-    gifts_text: "Tu presencia es el mejor regalo. Si deseas tener un detalle con Stalin, contaremos con lluvia de sobres.",
+    gifts_text: "Tu presencia es el mejor regalo. Si deseas tener un detalle con Estalin, contaremos con lluvia de sobres.",
     trayectoria_title: "Momentos que brillan",
     trayectoria_text: "Un recorrido por los momentos más especiales de estos 65 años.",
     album_title: "Álbum Digital",
@@ -1227,7 +1228,7 @@ const translations = {
     playlist_text: "Ayúdame a crear la playlist perfecta para esta noche. Agrega esa canción que no puede faltar.",
     btn_playlist: "Agregar canción",
     wishes_title: "Buenos Deseos",
-    wishes_text: "Déjale un mensaje especial a Stalin para guardar este recuerdo por siempre.",
+    wishes_text: "Déjale un mensaje especial a Estalin para guardar este recuerdo por siempre.",
     btn_wish_open: "Déjame tu deseo",
     btn_wish_read: "Leer buenos deseos",
     wish_label_nombre: "Nombre",
@@ -1285,14 +1286,15 @@ const translations = {
     itinerary_item_6: "Hora Loca",
     itinerary_item_7: "Farewell",
     evento1_titulo: "Business Blessing",
-    evento1_lugar: "WOODSIDE LAUNDRY, I&L Laundry Corp.",
+    evento1_lugar: "I&L Laundry Corp.",
     evento2_titulo: "Celebration",
     recepcion_titulo: "Reception",
     btn_location: "View location",
     dresscode_title: "Dress Code",
     dresscode_text: "Tonight calls for your finest. We invite you to wear formal gala attire as we celebrate this great moment together.",
+    btn_dresscode: "Outfit Ideas",
     gifts_title: "Envelope Shower",
-    gifts_text: "Your presence is the greatest gift. If you wish to offer Stalin a personal gesture, there will be an envelope shower.",
+    gifts_text: "Your presence is the greatest gift. If you wish to offer Estalin a personal gesture, there will be an envelope shower.",
     trayectoria_title: "Moments That Shine",
     trayectoria_text: "A look back at the most special moments of these 65 years.",
     album_title: "Digital Album",
@@ -1303,7 +1305,7 @@ const translations = {
     playlist_text: "Help set the tone for the evening. Add the song that belongs on tonight's soundtrack — the one that can't be left out.",
     btn_playlist: "Add a song",
     wishes_title: "Best Wishes",
-    wishes_text: "Leave Stalin a special message to keep this memory forever.",
+    wishes_text: "Leave Estalin a special message to keep this memory forever.",
     btn_wish_open: "Write a wish",
     btn_wish_read: "Read wishes",
     wish_label_nombre: "Name",

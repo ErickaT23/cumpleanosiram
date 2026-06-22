@@ -1,6 +1,6 @@
 const config = {
     event: {
-        defaultEventId: "irmanstalin2026",
+        defaultEventId: "irmanestalin2026",
         eventIdParam: "eventId",
         eventDate: "2026-08-01T13:30:00",
         eventName: "Irman Estalin Lopez",
@@ -38,7 +38,7 @@ const config = {
     evento: {
         bendicion: {
             titulo: "Bendición del Negocio",
-            lugar: "WOODSIDE LAUNDRY, I&L Laundry Corp.",
+            lugar: "I&L Laundry Corp.",
             hora: "1:00 PM",
             direccion: "54-22 31st Ave, Woodside, NY 11377, United States",
             ubicacionUrl: "https://share.google/LOSU7umZPkkgv4c7U"

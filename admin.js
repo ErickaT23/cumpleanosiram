@@ -634,6 +634,31 @@
         return map;
     }
 
+    function getFallbackInvitadosMap(eventId) {
+        const directory = typeof window.getLocalGuestDirectoryForEvent === "function"
+            ? window.getLocalGuestDirectoryForEvent(eventId)
+            : ((window.LocalGuestSeeds || {})[eventId] || {});
+
+        return mapInvitados(
+            Object.entries(directory || {}).map(function ([id, guest]) {
+                return {
+                    id,
+                    nombre: guest && guest.nombre,
+                    pases: guest && guest.pases,
+                    activo: typeof (guest && guest.activo) === "undefined" ? true : Boolean(guest.activo)
+                };
+            })
+        );
+    }
+
+    function mergeInvitadosMaps(fallbackMap, remoteMap) {
+        const merged = new Map(fallbackMap || []);
+        (remoteMap || new Map()).forEach(function (guest, id) {
+            merged.set(id, guest);
+        });
+        return merged;
+    }
+
     function mapConfirmations(confirmations) {
         const latestByGuest = new Map();
 
@@ -1333,7 +1358,9 @@
         const unsubscribeInvitados = db.subscribeToInvitados(
             state.eventId,
             function (invitados) {
-                state.invitadosMap = mapInvitados(invitados);
+                const fallbackMap = getFallbackInvitadosMap(state.eventId);
+                const remoteMap = mapInvitados(invitados);
+                state.invitadosMap = mergeInvitadosMaps(fallbackMap, remoteMap);
                 refreshView();
             },
             function (error) {
